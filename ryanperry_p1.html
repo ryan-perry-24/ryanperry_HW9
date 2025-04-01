@@ -4,26 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business Analytics Student Services</title>
+    <link href="stylesheet/stylesheet.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <script
+      src="https://kit.fontawesome.com/bbeba1e6dc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <form>
       <h1>Business Analytics Student Services</h1>
-      <p>My home country is</p>
-      <p>
-        <input
-          type="text"
-          name="home_country"
-          placeholder="Country"
-          autofocus
-        />
-      </p>
-
-      <p>My home town is</p>
-      <p>
+      <label for="username">My home country is</label>
+      <p></p>
+      <input type="text" name="home_country" placeholder="Country"/>
+      <p></p>
+        <label for="username">My hometown is</label>
+        <p></p>
         <input type="text" name="home_town" placeholder="Town" required />
         <i
           class="fa-solid fa-circle-question"
@@ -96,6 +95,7 @@
 
       <p>My impression of the BAIS major is</p>
       <select name="impression" id="impression-select">
+        <option value="">--choose one--</option>
         <option value="5 (Very Positive)">5 (Very Positive)</option>
         <option value="4 (Somewhat Positive)">4 (Somewhat Positive)</option>
         <option value="3 (Neutral)">3 (Neutral)</option>
